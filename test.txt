@@ -1,6 +1,11 @@
 "Test push personal" 
 Test push personal
 "Test push personal" 
+<<<<<<< HEAD
 "Test push personal Vitalie" 
 Test push personal
 Test push personal
+=======
+"Test push personal Vitalie"
+"Test push personal Ariana"
+>>>>>>> e6172fc1825162f3ce4913384361a8f7bb945498
