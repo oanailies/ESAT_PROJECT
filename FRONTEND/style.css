@@ -1,1 +1,107 @@
+body {
+    font-family: "Segoe UI", sans-serif;
+    background: linear-gradient(135deg, #667eea, #764ba2);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;   /* schimbat din height */
+    color: #333;
+}
 
+/* 🔥 AICI E CHEIA */
+.container {
+    background: white;
+    padding: 40px;          /* mai mult spațiu interior */
+    width: 650px;           /* MAI MARE */
+    max-width: 95vw;        /* responsive */
+    border-radius: 24px;    /* mai elegant */
+    box-shadow: 0 25px 60px rgba(0,0,0,0.28);
+}
+
+/* titlu mai aerisit */
+h1 {
+    text-align: center;
+    margin-bottom: 25px;
+    color: #5a3ea1;
+    font-size: 2rem;
+}
+
+.form,
+.filter {
+    display: flex;
+    gap: 12px;
+    margin-bottom: 18px;
+}
+
+input,
+select {
+    flex: 1;
+    padding: 12px;          /* mai mare */
+    border-radius: 12px;
+    border: 1px solid #ddd;
+    font-size: 1rem;
+}
+
+button {
+    background: linear-gradient(135deg, #667eea, #764ba2);
+    color: white;
+    border: none;
+    padding: 12px 18px;
+    border-radius: 12px;
+    cursor: pointer;
+    transition: transform 0.2s, opacity 0.2s;
+    font-size: 1rem;
+}
+
+button:hover {
+    transform: scale(1.05);
+    opacity: 0.9;
+}
+
+.search {
+    width: 100%;
+    margin-bottom: 15px;
+    padding: 12px;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+    margin-top: 20px;
+    max-height: 300px;      
+    overflow-y: auto;
+}
+
+li {
+    background: #f5f5f5;
+    margin-bottom: 12px;
+    padding: 14px;
+    border-radius: 14px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+li button {
+    background: #ff4d4d;
+    padding: 8px 12px;
+    border-radius: 50%;
+}
+
+.date {
+    display: block;
+    font-size: 0.8em;
+    color: gray;
+}
+
+.total {
+    margin-top: 25px;
+    font-weight: bold;
+    font-size: 1.4em;
+    text-align: center;
+    color: #5a3ea1;
+}
+
+.right button {
+    margin-left: 8px;
+}

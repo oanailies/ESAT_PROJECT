@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="ro">
+<head>
+    <meta charset="UTF-8">
+    <title>Expense Tracker</title>
+
+    <!-- CSS Flask -->
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+
+<div class="container">
+    <h1>💸 Expense Tracker</h1>
+
+    <!-- CREATE / UPDATE -->
+    <div class="form">
+        <input type="number" id="amount" placeholder="Sumă (RON)">
+        <select id="category"></select>
+        <button onclick="submitExpense()">Salvează</button>
+    </div>
+
+    <!-- SEARCH -->
+    <input
+        type="text"
+        id="search"
+        class="search"
+        placeholder="🔍 Caută după categorie..."
+        oninput="loadExpenses()"
+    >
+
+    <!-- FILTER -->
+    <div class="filter">
+        <select id="filter" onchange="loadExpenses()">
+            <option value="Toate">Toate categoriile</option>
+        </select>
+    </div>
+
+    <!-- READ -->
+    <ul id="expense-list"></ul>
+
+    <!-- TOTAL -->
+    <div class="total">
+        Total: <span id="total">0</span> RON
+    </div>
+</div>
+
+<!-- JS Flask -->
+<script src="{{ url_for('static', filename='script.js') }}"></script>
+
+</body>
+</html>
