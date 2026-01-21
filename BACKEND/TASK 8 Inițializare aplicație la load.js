@@ -1,0 +1,4 @@
+window.onload = () => {
+  initCategories();
+  loadExpenses();
+};
